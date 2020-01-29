@@ -1,0 +1,121 @@
+#loginForm {
+    border: 1px solid black;
+    width: 30%;
+}
+#billForm {
+    border: 1px solid black;
+    width: 30%;
+    background-color: #c7d8c6;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+#billHeader{
+    
+}
+
+.upcomingBillsCenter{
+    margin-right: auto;
+    margin-left: auto;
+    align-content: center;
+    text-align: center;
+}
+#billCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container{
+    text-align: center;
+    background-color: #CCCBC6;
+    color: black;
+    
+    height: 100%;
+    margin: 0px auto;
+    
+    box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.75);
+}
+
+#loginButton {
+text-align: left;
+border: 5px solid #c7d8c6;
+}
+
+#header {
+    padding: 20px;
+    background-color: #efd9c1;
+    color: black;
+}
+
+#options{
+    list-style-type: none;
+    
+}
+#options li{
+    padding: 10px;
+    background-color: #a9b7c0;
+    color: #d9d9d9;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border: 5px solid #c7d8c6;
+}
+#options li:hover{
+    background-color: #c7d8c6;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+#mainContent{
+    
+}
+
+.wrapper {
+
+}
+
+body, html {
+height: 100%;
+}
+
+.team img {
+  display: block;
+  max-height: 210px;
+  width: auto;
+  height: auto;
+}
+
+.team{
+    flex: 33.33%;
+  padding: 5px;
+}
+
+#tableContainer{
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    text-align: center;
+}
+
+.imageRow{
+  display: flex;
+    align-content: center;
+    text-align: center;
+}
+
+#countdown{
+    border: 5px solid #c7d8c6;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+    background-color: #c7d8c6;
+}
+
+th {
+    background-color: #efd9c1;
+}
+
