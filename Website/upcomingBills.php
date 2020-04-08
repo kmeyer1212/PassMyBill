@@ -62,6 +62,9 @@
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
+    else {
+        echo("Connection Successful!");
+    }
 
     $sql = "SELECT * from predictedBills.bills WHERE billID != '' AND dateOfVote > CURRENT_TIMESTAMP";
     $result = $conn->query($sql);
