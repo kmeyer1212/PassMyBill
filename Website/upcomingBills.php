@@ -56,11 +56,13 @@
     $servername = "PassMyBill";
     $serverusername = "root";
     $serverpassword = "password";
-    $conn = new mysqli($servername, $serverusername, $serverpassword);
+    $serverlink = "localhost";
+    $conn = new mysqli($serverlink, $serverusername, $serverpassword, $servername);
+    @mysql_select_db($servername) or die ("Unable to connect to PassMyBill");
 
     // Check connection
     if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
+        die("Connection Failed: " . $conn->connect_error);
         echo("Connection Failed");
     }
     else {
