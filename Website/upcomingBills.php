@@ -5,7 +5,6 @@
         <title>Upcoming</title>
         <link rel="stylesheet" href="finalProj.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
     <style>
         table, th, td {
             border: 1px solid black;
@@ -36,6 +35,10 @@
         <a href="mySubmittedBills.php">My Bills</a>
     </div>
 </head>
+<div class="container">
+    <div class="row">
+        <h2 class="col-md-12" id="header">Pass My Bill</h2>
+    </div>
 <?php
     echo "<body>";
     echo "<div class='upcomingBillsCenter'>";
@@ -50,15 +53,14 @@
         <th>Date of Vote</th>
         <th>Probability</th></tr>";
     echo $queryResults;
-    echo $message;
     
     // Create connection
     $servername = "PassMyBill";
     $serverusername = "root";
     $serverpassword = "password";
     $serverlink = "localhost";
-    $conn = new mysqli($serverlink, $serverusername, $serverpassword, $servername);
-    @mysql_select_db($servername) or die ("Unable to connect to PassMyBill");
+    $conn = new mysqli($serverlink, $serverusername, $serverpassword);
+    //@mysql_select_db($servername) or die ("Unable to connect to PassMyBill");
 
     // Check connection
     if ($conn->connect_error) {
@@ -91,4 +93,5 @@
     $conn->close();  
     echo "</body>";
 ?>
+    </div>
 </html>

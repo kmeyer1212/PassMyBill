@@ -22,7 +22,10 @@
     </head>
     <body>
         <div class="container">
-        <h3 id="billHeader"><u>Bill Prediction</u></h3>
+            <div class="row">
+                <h2 class="col-md-12" id="header">Pass My Bill</h2>
+            </div>
+            <h3 id="billHeader"><u>Bill Prediction</u></h3>
             <div id="billCenter">
                 <div id="billForm">
                     <br>

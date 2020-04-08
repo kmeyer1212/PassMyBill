@@ -24,13 +24,6 @@
                 <h2 class="col-md-12" id="header">Pass My Bill</h2>
             </div>
             <div class="row">
-                <div class="col-md-4">                
-                    <?php require 'Template.php';
-                          $page = new Template();
-                          $result = $page->build('page.tmpl');
-                          print $result;
-                    ?>
-                </div>
                 <div class="col-md-7">
                     <h4><u>About Us</u></h4>
                     <div>We are a group of Computer Science Seniors at Mizzou who are trying to build an amazing Capstone Project: PassMyBill.

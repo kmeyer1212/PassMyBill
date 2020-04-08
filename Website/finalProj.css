@@ -5,7 +5,7 @@
 #billForm {
     border: 1px solid black;
     width: 30%;
-    background-color: #c7d8c6;
+    background-color: cornflowerblue;
     margin-right: auto;
     margin-left: auto;
     
@@ -28,21 +28,14 @@
     text-align: center;
     background-color: #CCCBC6;
     color: black;
-    
     height: 100%;
     margin: 0px auto;
-    
     box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.75);
-}
-
-#loginButton {
-text-align: left;
-border: 5px solid #c7d8c6;
 }
 
 #header {
     padding: 20px;
-    background-color: #efd9c1;
+    background-color: lightslategray;
     color: black;
 }
 
@@ -56,21 +49,13 @@ border: 5px solid #c7d8c6;
     color: #d9d9d9;
     margin-bottom: 10px;
     text-decoration: none;
-    border: 5px solid #c7d8c6;
+    border: 3px solid cornflowerblue;
 }
 #options li:hover{
-    background-color: #c7d8c6;
+    background-color: cornflowerblue;
     cursor: pointer;
     text-decoration: none;
     color: black;
-}
-
-#mainContent{
-    
-}
-
-.wrapper {
-
 }
 
 body, html {
@@ -122,7 +107,7 @@ height: 100%;
 }
 
 .topnav a.active {
-    background-color: #6495ED;
+    background-color: cornflowerblue;
     color: white;
 }
 

@@ -35,10 +35,14 @@
             <a class="active" href="mySubmittedBills.php">My Bills</a>
         </div>
     </head>
+    <div class="container">
+        <div class="row">
+            <h2 class="col-md-12" id="header">Pass My Bill</h2>
+        </div>
     <?php
         echo "<body>";
         echo "<div class='upcomingBillsCenter'>";
-        echo "<h1>Submitted bills from user: " .$username."</h1><br>";
+        echo "<h1>My Submitted Bills</h1>";
 
         $queryResults = "<div id='tableContainer'><table style='border: 1px solid black;
             border-collapse: collapse;'><tr>
@@ -51,12 +55,11 @@
             <th>Probability</th></tr>";
 
         echo $queryResults;
-        echo $message;
 
         // Create connection
         $servername = "localhost";
-        $serverusername = "loginUser";
-        $serverpassword = "clay";
+        $serverusername = "root";
+        $serverpassword = "password";
         $conn = new mysqli($servername, $serverusername, $serverpassword);
 
         // Check connection
@@ -83,4 +86,5 @@
         echo "</div>";
         echo "</body>";
     ?>
+    </div>
 </html>
