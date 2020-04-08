@@ -53,9 +53,9 @@
     echo $message;
     
     // Create connection
-    $servername = "localhost";
-    $serverusername = "loginUser";
-    $serverpassword = "clay";
+    $servername = "PassMyBill";
+    $serverusername = "root";
+    $serverpassword = "password";
     $conn = new mysqli($servername, $serverusername, $serverpassword);
 
     // Check connection
