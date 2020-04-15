@@ -18,7 +18,7 @@
         $registrantName = $_GET["registrantName"];
         $clientName = $_GET["clientName"];
         $lobbyistNames = $_GET["lobbyistNames"];
-        $output = shell_exec('python /home/pi/Desktop/ModelTest.py ' .$amount, .$registrantName, .$clientName, .$lobbyistNames);
+        $output = shell_exec('python /home/pi/Desktop/PythonScript.py ' .$amount, .$registrantName, .$clientName, .$lobbyistNames);
         echo $output;
 
         // Create connection
