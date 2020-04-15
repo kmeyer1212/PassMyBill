@@ -1,5 +1,9 @@
 <!DOCTYPE html> 
 <html lang="en">
+    <?php
+        $data = 'hello';
+        $output = shell_exec("/home/pi/Desktop/ModelTest.py " .$data);
+    ?>
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <meta charset="utf-8">
