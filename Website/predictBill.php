@@ -5,7 +5,7 @@
         $serverusername = "root";
         $serverpassword = "password";
         $dbname = "PassMyBill";
-        $conn = new mysqli($servername, $serverusername, $serverpassword, $dbname);
+        //$conn = new mysqli($servername, $serverusername, $serverpassword, $dbname);
 
         //$username = $_COOKIE["username"];
         //$billID = $_GET["billID"];
@@ -24,7 +24,7 @@
         // Create connection
         //$conn = new mysqli($servername, $username, $password, $dbname);
         // Check connection
-        if ($conn->connect_error) {
+        /*if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
 
@@ -37,5 +37,5 @@
             $error = "Error with input!";
             require "billPredictionPage.php";
         }
-        $conn->close();
+        $conn->close();*/
 ?>
