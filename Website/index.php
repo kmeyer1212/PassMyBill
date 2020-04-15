@@ -2,7 +2,8 @@
 <html lang="en">
     <?php
         $data = 'hello';
-        $output = shell_exec("/home/pi/Desktop/ModelTest.py " .$data);
+        $output = shell_exec('python /home/pi/Desktop/ModelTest.py ' .$data);
+        echo $output;
     ?>
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
