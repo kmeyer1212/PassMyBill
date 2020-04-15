@@ -31,12 +31,17 @@
                     <br>
                     <form action="predictBill.php" method="get">
                         <input type="hidden" name="action" value="">
-                        <p>Bill ID: <input class="form-control" name="billID" type="text" required></p>
+                        <!--<p>Bill ID: <input class="form-control" name="billID" type="text" required></p>
                         <p>Bill PDF: <input class="form-control" name="billFile" type="file"></p>
                         <p># of Democrats: <input class="form-control" name="numOfDem" type="text" required></p>
                         <p># of Republicans: <input class="form-control" name="numOfRep" type="text" required></p>
                         <p>Bill Proposer: <input class="form-control" name="billProposer" type="text" required></p>
-                        <p>Date of Vote: <input class="form-control" name="dateOfVote" type="text" placeholder="YYYY-MM-DD" required></p>
+                        <p>Date of Vote: <input class="form-control" name="dateOfVote" type="text" placeholder="YYYY-MM-DD" required></p> -->
+                        <p>Amount: <input class="form-control" name="amount" type="text" required></p>
+                        <p>Bill PDF: <input class="form-control" name="billFile" type="file"></p>
+                        <p>Registrant Name: <input class="form-control" name="registrantName" type="text" required></p>
+                        <p>Client Name: <input class="form-control" name="clientName" type="text" required></p>
+                        <p>Lobbyist Names: <input class="form-control" name="lobbyistNames" type="text" required></p>
                         <p><button class="btn btn-primary" type="submit">Submit</button></p>
                     </form>
                 <div>Note: Lobbying data associated with bill is cacluated automatically.</div>

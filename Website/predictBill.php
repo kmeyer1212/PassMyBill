@@ -1,17 +1,25 @@
 <?php
-
+    
+        echo("Hello!!");
         $servername = "localhost";
         $serverusername = "root";
         $serverpassword = "password";
         $dbname = "PassMyBill";
         $conn = new mysqli($servername, $serverusername, $serverpassword, $dbname);
 
-        $username = $_COOKIE["username"];
-        $billID = $_GET["billID"];
-        $numOfDem = $_GET["numOfDem"];
-        $numOfRep = $_GET["numOfRep"];
-        $billProposer = $_GET["billProposer"];
-        $dateOfVote = $_GET["dateOfVote"];
+        //$username = $_COOKIE["username"];
+        //$billID = $_GET["billID"];
+        //$numOfDem = $_GET["numOfDem"];
+        //$numOfRep = $_GET["numOfRep"];
+        //$billProposer = $_GET["billProposer"];
+        //$dateOfVote = $_GET["dateOfVote"];
+
+        $amount = $_GET["amount"];
+        $registrantName = $_GET["registrantName"];
+        $clientName = $_GET["clientName"];
+        $lobbyistNames = $_GET["lobbyistNames"];
+        $output = shell_exec('python /home/pi/Desktop/ModelTest.py ' .$amount, .$registrantName, .$clientName, .$lobbyistNames);
+        echo $output;
 
         // Create connection
         //$conn = new mysqli($servername, $username, $password, $dbname);
