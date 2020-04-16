@@ -40,6 +40,9 @@
                         <p>Amount: <input class="form-control" name="amount" type="text" required></p>
                         <p>Bill PDF: <input class="form-control" name="billFile" type="file"></p>
                         <p>Registrant Name: <input class="form-control" name="registrantName" type="text" required></p>
+                        <p>Issue Code: <input class="form-control" name="registrantName" type="text" required></p>
+                        <p>Majority: <input class="form-control" name="majority" type="text" required></p>
+                        <p>Leaning: <input class="form-control" name="leaning" type="text" required></p>
                         <p>Client Name: <input class="form-control" name="clientName" type="text" required></p>
                         <p>Lobbyist Names: <input class="form-control" name="lobbyistNames" type="text" required></p>
                         <p><button class="btn btn-primary" type="submit">Submit</button></p>
