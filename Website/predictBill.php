@@ -1,10 +1,10 @@
 <?php
     
-        echo("Hello!!");
-        $servername = "localhost";
-        $serverusername = "root";
-        $serverpassword = "password";
-        $dbname = "PassMyBill";
+//        echo("Hello!!");
+  //      $servername = "localhost";
+    //    $serverusername = "root";
+      //  $serverpassword = "password";
+       // $dbname = "PassMyBill";
         //$conn = new mysqli($servername, $serverusername, $serverpassword, $dbname);
 
         //$username = $_COOKIE["username"];
@@ -26,9 +26,9 @@
         $majority = "R";
         $registrantName = "Forbes-Tate";
         //$output = shell_exec('python /home/pi/Desktop/PythonScript.py ' .$amount, .$registrantName, .$clientName, .$lobbyistNames);
-        $output = shell_exec('python /home/pi/Desktop/PythonScript.py ' .$amount, .clientName, .$issueCode, .$leaning, .$lobbyistNames, .$majority, .$registrantName);
+        $output = shell_exec('python /home/pi/Desktop/PythonScript.py ' .$amount .$clientName .$issueCode .$leaning .$lobbyistNames .$majority .$registrantName);
         echo $output;
-
+	echo "Whaddup";
         // Create connection
         //$conn = new mysqli($servername, $username, $password, $dbname);
         // Check connection
