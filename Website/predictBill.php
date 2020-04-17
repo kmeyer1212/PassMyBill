@@ -7,28 +7,15 @@
        // $dbname = "PassMyBill";
         //$conn = new mysqli($servername, $serverusername, $serverpassword, $dbname);
 
-        //$username = $_COOKIE["username"];
-        //$billID = $_GET["billID"];
-        //$numOfDem = $_GET["numOfDem"];
-        //$numOfRep = $_GET["numOfRep"];
-        //$billProposer = $_GET["billProposer"];
-        //$dateOfVote = $_GET["dateOfVote"];
-
-        /*$amount = $_GET["amount"];
+        $amount = $_GET["amount"];
         $registrantName = $_GET["registrantName"];
         $clientName = $_GET["clientName"];
-        $lobbyistNames = $_GET["lobbyistNames"];*/
-        $amount = 100000000;
-        $clientName = "American Sportfishing Association";
-        $issueCode = "TAXATION/INTERNAL RENENUE CODE";
-        $leaning = "R";
-        $lobbyistNames = "Cooper, George"; //Not sure what to do with arrays yet
-        $majority = "R";
-        $registrantName = "Forbes-Tate";
-        //$output = shell_exec('python /home/pi/Desktop/PythonScript.py ' .$amount, .$registrantName, .$clientName, .$lobbyistNames);
+        $lobbyistNames = $_GET["lobbyistNames"];
+        $issueCode = $_GET["issueCode"];
+        $leaning = $_GET["leaning"];
+        $majority = $_GET["majority"];
         $output = shell_exec('python /home/pi/Desktop/PythonScript.py ' .$amount .$clientName .$issueCode .$leaning .$lobbyistNames .$majority .$registrantName);
         echo $output;
-	echo "Whaddup";
         // Create connection
         //$conn = new mysqli($servername, $username, $password, $dbname);
         // Check connection
