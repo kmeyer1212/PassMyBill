@@ -38,9 +38,8 @@
                         <p>Bill Proposer: <input class="form-control" name="billProposer" type="text" required></p>
                         <p>Date of Vote: <input class="form-control" name="dateOfVote" type="text" placeholder="YYYY-MM-DD" required></p> -->
                         <p>Amount: <input class="form-control" name="amount" type="text" required></p>
-                        <p>Bill PDF: <input class="form-control" name="billFile" type="file"></p>
                         <p>Registrant Name: <input class="form-control" name="registrantName" type="text" required></p>
-                        <p>Issue Code: <input class="form-control" name="registrantName" type="text" required></p>
+                        <p>Issue Code: <input class="form-control" name="issueCode" type="text" required></p>
                         <p>Majority: <input class="form-control" name="majority" type="text" required></p>
                         <p>Leaning: <input class="form-control" name="leaning" type="text" required></p>
                         <p>Client Name: <input class="form-control" name="clientName" type="text" required></p>

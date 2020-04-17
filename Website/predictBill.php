@@ -6,16 +6,25 @@
       //  $serverpassword = "password";
        // $dbname = "PassMyBill";
         //$conn = new mysqli($servername, $serverusername, $serverpassword, $dbname);
-
-        $amount = $_GET["amount"];
+	$file = fopen("data.txt", "w") or die("I cant believe this isnt working");
+	$amount = $_GET["amount"];
         $registrantName = $_GET["registrantName"];
         $clientName = $_GET["clientName"];
         $lobbyistNames = $_GET["lobbyistNames"];
         $issueCode = $_GET["issueCode"];
         $leaning = $_GET["leaning"];
-        $majority = $_GET["majority"];
-        $output = shell_exec('python /home/pi/Desktop/PythonScript.py ' .$amount .$clientName .$issueCode .$leaning .$lobbyistNames .$majority .$registrantName);
-        echo $output;
+	$majority = $_GET["majority"];
+	fwrite($file, $amount."\n");
+	fwrite($file, $clientName."\n");
+	fwrite($file, $issueCode."\n");
+	fwrite($file, $leaning."\n");
+	fwrite($file, $lobbyistNames."\n");
+	fwrite($file, $majority."\n");
+	fwrite($file, $registrantName."\n");
+	fclose($file);
+	$output=shell_exec("python script.py '".$amount."' '".$clientName."' '".$issueCode."' '".$leaning."' '".$lobbyistNames."' '".$majority."' '".$registrantName."'");
+	echo "I got here";
+	echo $output;
         // Create connection
         //$conn = new mysqli($servername, $username, $password, $dbname);
         // Check connection
