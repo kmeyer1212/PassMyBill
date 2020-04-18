@@ -25,11 +25,16 @@
                 <div class="col-md-7">
                     <h4><u>Result History</u></h4>
                     <br>
-                    <br>
-                    <div><img src="resultHistory.png" style="width: 300px; height: 300px;" alt="resultHistory"></div>
-                    <br><br>
-                    <div>Note: This is placeholder data of what result data looks like, machine learning has not yet been implemented into the app</div>
-                </div>
+<!--                    <div><img src="resultHistory.png" style="width: 300px; height: 300px;" alt="resultHistory"></div> -->
+			<?php
+			$file=fopen("history.txt","r") or die("Unable to open history!");
+			while(!feof($file))
+			{
+				echo fgets($file)."<br>";
+			}
+			fclose($file);
+			?>
+		</div>
             </div>
     </body>
 </html>

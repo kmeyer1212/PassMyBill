@@ -1,0 +1,17 @@
+H.R. 1055
+Predicted totalYes: 266.986755371
+Prediction Interval: 
+Start: 197.341278076
+End: 317.296386719
+
+H.R. 756
+Predicted totalYes: 254.178405762
+Prediction Interval: 
+Start: 190.301116943
+End: 321.144042969
+
+H.R. 1003
+Predicted totalYes: 263.131408691
+Prediction Interval:
+Start: 227.529296875
+End: 286.498779297

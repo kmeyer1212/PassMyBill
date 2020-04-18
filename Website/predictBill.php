@@ -6,7 +6,7 @@
       //  $serverpassword = "password";
        // $dbname = "PassMyBill";
         //$conn = new mysqli($servername, $serverusername, $serverpassword, $dbname);
-	$file = fopen("data.txt", "w") or die("I cant believe this isnt working");
+	$file = fopen("history.txt", "a") or die("Unable to write to history");
 	$amount = $_GET["amount"];
         $registrantName = $_GET["registrantName"];
         $clientName = $_GET["clientName"];
@@ -14,17 +14,18 @@
         $issueCode = $_GET["issueCode"];
         $leaning = $_GET["leaning"];
 	$majority = $_GET["majority"];
-	fwrite($file, $amount."\n");
-	fwrite($file, $clientName."\n");
-	fwrite($file, $issueCode."\n");
-	fwrite($file, $leaning."\n");
-	fwrite($file, $lobbyistNames."\n");
-	fwrite($file, $majority."\n");
-	fwrite($file, $registrantName."\n");
+	$checkbox = $_GET['featureImportance'];
+	$bill = $_GET["Bill"];
+	$featureImportance = '0';
+	if(isset($checkbox))
+	{
+		$featureImportance = '1';
+	}
+	$output=shell_exec("python script.py '".$amount."' '".$clientName."' '".$issueCode."' '".$leaning."' '".$lobbyistNames."' '".$majority."' '".$registrantName."' '".$featureImportance."'");
+	$output1 = "H.R. ".$bill."<br>".$output;
+	echo $output1;
+	fwrite($file, $output1);
 	fclose($file);
-	$output=shell_exec("python script.py '".$amount."' '".$clientName."' '".$issueCode."' '".$leaning."' '".$lobbyistNames."' '".$majority."' '".$registrantName."'");
-	echo "I got here";
-	echo $output;
         // Create connection
         //$conn = new mysqli($servername, $username, $password, $dbname);
         // Check connection
@@ -43,3 +44,9 @@
         }
         $conn->close();*/
 ?>
+<html>
+<body>
+<br>
+<a href="/resultHistoryPage.php">See all History</a>
+</body>
+</html>

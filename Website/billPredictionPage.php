@@ -37,13 +37,29 @@
                         <p># of Republicans: <input class="form-control" name="numOfRep" type="text" required></p>
                         <p>Bill Proposer: <input class="form-control" name="billProposer" type="text" required></p>
                         <p>Date of Vote: <input class="form-control" name="dateOfVote" type="text" placeholder="YYYY-MM-DD" required></p> -->
-                        <p>Amount: <input class="form-control" name="amount" type="text" required></p>
+		        <p>Bill Id (H.R.): <input class="form-control" name="Bill" type="number" required></p>
+			<p>Amount: <input class="form-control" name="amount" type="number" required></p>
                         <p>Registrant Name: <input class="form-control" name="registrantName" type="text" required></p>
                         <p>Issue Code: <input class="form-control" name="issueCode" type="text" required></p>
-                        <p>Majority: <input class="form-control" name="majority" type="text" required></p>
-                        <p>Leaning: <input class="form-control" name="leaning" type="text" required></p>
-                        <p>Client Name: <input class="form-control" name="clientName" type="text" required></p>
-                        <p>Lobbyist Names: <input class="form-control" name="lobbyistNames" type="text" required></p>
+		
+			<p>Bill Leaning (or who introduced it)<br>
+				<input type="radio" id="DL" name="leaning" value="D" checked='checked'>
+				<label for="DL">Democrat</label>
+				<input type="radio" id="RL" name="leaning" value="R">
+				<label for="RL">Republican</label>
+				<input type="radio" id="BL" name="leaning" value="B">
+				<label for="BL">Bi-partisan</label>
+			</p>
+			<p>House Majority (Currently is Democrat)<br>
+				<input type="radio" id="DM" name="majority" value="D" checked='checked'>
+				<label for="DM">Democrat</label>
+				<input type="radio" id="RM" name="majority" value="R">
+				<label for="RM">Republican</label>	
+			</p>	
+			
+			<p>Client Name: <input class="form-control" name="clientName" type="text" required></p>
+			<p>Lobbyist Names: <input class="form-control" name="lobbyistNames" type="text" required></p>
+			<p>Show Feature Importance? <input class="form-control" name="featureImportance" type="checkbox"></p>
                         <p><button class="btn btn-primary" type="submit">Submit</button></p>
                     </form>
                 <div>Note: Lobbying data associated with bill is cacluated automatically.</div>

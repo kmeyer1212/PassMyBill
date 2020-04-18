@@ -1,6 +1,3 @@
-f=open("testfile.txt", "a")
-f.write("dsaffadsa")
-
 import os
 import sys
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/home/pi/Desktop/trusty-fuze-274320-39a560926e65.json'
@@ -9,15 +6,10 @@ project_id = 'trusty-fuze-274320'
 compute_region = 'us-central1'
 model_display_name = 'PassMyBill_20200415035916'
 
-f.write(sys.argv[1])
-
 inputs = {'Amount': float(sys.argv[1]), 'ClientName': sys.argv[2], 'IssueCode': sys.argv[3], 'Leaning': sys.argv[4], 'LobbyistNames': sys.argv[5], 'Majority': sys.argv[6], 'RegistrantName': sys.argv[7]}
-feature_importance=0
-
-f.write("Raffa")
+feature_importance=int(sys.argv[8])
 
 #"['COOPER, GEORGE', 'WELCH, Wesley Ryan']"
-
 from google.cloud import automl_v1beta1 as automl
 
 client = automl.TablesClient(project=project_id, region=compute_region)
@@ -32,14 +24,12 @@ else:
     response = client.predict(
         model_display_name=model_display_name, inputs=inputs
     )
-f.write("fsdhfdsh")
-print("Prediction results:")
 
 for result in response.payload:
     print(
         "Predicted totalYes: {}".format(result.tables.value.number_value)
     )
-    print("Prediction Interval: ")
+    print("Prediction Interval:")
     print("Start: " + str(result.tables.prediction_interval.start))
     print("End: " + str(result.tables.prediction_interval.end))
 
