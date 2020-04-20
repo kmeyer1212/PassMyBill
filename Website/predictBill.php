@@ -43,6 +43,37 @@
             require "billPredictionPage.php";
         }
         $conn->close();*/
+
+        $servername = "PassMyBill";
+    $serverusername = "root";
+    $serverpassword = "password";
+    $serverlink = "localhost";
+
+    $newBill = "H.R. " .$bill;
+
+    $conn = new mysqli($serverlink, $serverusername, $serverpassword);
+    //@mysql_select_db($servername) or die ("Unable to connect to PassMyBill");
+
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection Failed: " . $conn->connect_error);
+        echo("Connection Failed");
+    }
+    else {
+        echo("Connection Successful!");
+    }
+
+    $sql = "INSERT INTO submittedBills (billId, amount, registrantName, clientname, lobbyistNames, issueCode, leaning, majority, feature, prediction)
+VALUES (".$newBill. ",".$amount.",".$registrantName.",".$clientName.",".$lobbyistNames.",".$issueCode.",".$leaning.",".$majority.",".$featureImportance.",".$output.")";
+
+
+if ($conn->query($sql) === TRUE) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
 ?>
 <html>
 <body>
