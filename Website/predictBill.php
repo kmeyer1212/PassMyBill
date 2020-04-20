@@ -63,8 +63,14 @@
         echo("Connection Successful!");
     }
 
-    $sql = "INSERT INTO submittedBills (billId, amount, registrantName, clientname, lobbyistNames, issueCode, leaning, majority, feature, prediction)
-VALUES (".$newBill. ",".$amount.",".$registrantName.",".$clientName.",".$lobbyistNames.",".$issueCode.",".$leaning.",".$majority.",".$featureImportance.",".$output.")";
+//     $sql = "INSERT INTO submittedBills (billId, amount, registrantName, clientname, lobbyistNames, issueCode, leaning, majority, feature, prediction)
+// VALUES (".$newBill. ",".$amount.",".$registrantName.",".$clientName.",".$lobbyistNames.",".$issueCode.",".$leaning.",".$majority.",".$featureImportance.",".$output.")";
+
+
+$sql = "
+INSERT INTO `submittedBills` (`billId`, `amount`, `registrantName`, `clientname`,
+        `lobbyistNames`, `issueCode`, `leaning`,`majority`,`feature`, `prediction`) VALUES ('".$newBill."',
+        '".$amount."', '"$registrantName."', '".$clientname."','".$lobbyistNames."','".$issueCode."','".$leaning."','".$majority."','".$featureImportance."','".$output."');"
 
 
 if ($conn->query($sql) === TRUE) {
@@ -74,6 +80,7 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
+echo "End of script";
 ?>
 <html>
 <body>
