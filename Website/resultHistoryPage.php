@@ -26,7 +26,8 @@
                     <h4><u>Result History</u></h4>
                     <br>
 <!--                    <div><img src="resultHistory.png" style="width: 300px; height: 300px;" alt="resultHistory"></div> -->
-			<?php
+			<center>
+            <?php
 			$file=fopen("history.txt","r") or die("Unable to open history!");
 			while(!feof($file))
 			{
@@ -34,6 +35,7 @@
 			}
 			fclose($file);
 			?>
+        </center>
 		</div>
             </div>
     </body>
