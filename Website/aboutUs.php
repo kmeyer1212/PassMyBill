@@ -15,8 +15,8 @@
             <a href="resultHistoryPage.php">Result History</a>
             <a href="upcomingBills.php">Upcoming Bills</a>
             <a href="educational.php">Educational Video</a>
-            <a href="mySubmittedBills.php">My Bills</a>
-        </div>
+	    <a href="methodology.html">Methodology</a>
+	</div>
     </head>
     <body>
         <div class="container">

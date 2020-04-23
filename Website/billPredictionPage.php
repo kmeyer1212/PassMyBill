@@ -17,7 +17,7 @@
             <a href="resultHistoryPage.php">Result History</a>
             <a href="upcomingBills.php">Upcoming Bills</a>
             <a href="educational.php">Educational Video</a>
-            <a href="mySubmittedBills.php">My Bills</a>
+            <a href="methodology.html">Methodology</a>
         </div>
     </head>
     <body>
@@ -31,12 +31,6 @@
                     <br>
                     <form action="predictBill.php" method="get">
                         <input type="hidden" name="action" value="">
-                        <!--<p>Bill ID: <input class="form-control" name="billID" type="text" required></p>
-                        <p>Bill PDF: <input class="form-control" name="billFile" type="file"></p>
-                        <p># of Democrats: <input class="form-control" name="numOfDem" type="text" required></p>
-                        <p># of Republicans: <input class="form-control" name="numOfRep" type="text" required></p>
-                        <p>Bill Proposer: <input class="form-control" name="billProposer" type="text" required></p>
-                        <p>Date of Vote: <input class="form-control" name="dateOfVote" type="text" placeholder="YYYY-MM-DD" required></p> -->
 		        <p>Bill Id (H.R.): <input class="form-control" name="Bill" type="number" required></p>
 			<p>Amount: <input class="form-control" name="amount" type="number" required></p>
                         <p>Registrant Name: <input class="form-control" name="registrantName" type="text" required></p>

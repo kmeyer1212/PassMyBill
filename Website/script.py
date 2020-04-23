@@ -48,3 +48,4 @@ for result in response.payload:
         print("Features of top importance:")
         for feat in feat_list[:feat_to_show]:
             print(feat)
+    print("\n")

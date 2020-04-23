@@ -14,7 +14,7 @@
             <a class="active" href="resultHistoryPage.php">Result History</a>
             <a href="upcomingBills.php">Upcoming Bills</a>
             <a href="educational.php">Educational Video</a>
-            <a href="mySubmittedBills.php">My Bills</a>
+            <a href="methodology.html">Methodology</a>
         </div>
     </head>
     <body>
@@ -24,18 +24,17 @@
             </div>
                 <div class="col-md-7">
                     <h4><u>Result History</u></h4>
-                    <br>
-<!--                    <div><img src="resultHistory.png" style="width: 300px; height: 300px;" alt="resultHistory"></div> -->
-			<center>
+		    <br>
+		<textarea cols="100" rows="25" readonly>
             <?php
 			$file=fopen("history.txt","r") or die("Unable to open history!");
 			while(!feof($file))
 			{
-				echo fgets($file)."<br>";
+				echo fgets($file);
 			}
 			fclose($file);
 			?>
-        </center>
+</textarea>
 		</div>
             </div>
     </body>
