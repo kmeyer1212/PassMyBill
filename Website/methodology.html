@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <title>Methodology</title>
+        <link rel="stylesheet" href="finalProj.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: #CCCBC6;
+        }
+        .collapsible {
+          background-color: #777;
+          color: white;
+          cursor: pointer;
+          padding: 18px;
+          width: 850px;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+        }
+
+        .active, .collapsible:hover {
+          background-color: #555;
+        }
+
+        .content {
+          padding: 0 18px;
+          display: none;
+          overflow: hidden;
+          background-color: #f1f1f1;
+          width: 850px;
+        }
+</style>
+    <div class="topnav">
+        <a href="index.php">Home</a>
+        <a href="aboutUs.php">About Us</a>
+        <a href="billPredictionPage.php">Bill Prediction</a>
+        <a href="resultHistoryPage.php">Result History</a>
+        <a href="upcomingBills.php">Upcoming Bills</a>
+        <a href="educational.php">Educational Video</a>
+        <a href="methodology.html" class="active" >Methodology</a>
+    </div>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <h2 class="col-md-12" id="header">Pass My Bill</h2>
+        </div>
+    <p>Our project aimed to tackled the problem of finding what, if any, role lobbying played in the passing of a piece of legislature. To narrow down the amount of data that the group would be working with, it was decided that only House Bills (H.R.) would be used. Our initial work led us into a <a href="https://www.govtrack.us/congress/votes#chamber[]=2">website that tracks past legislature</a>. The team quickly found however that the website seemed to contain very few data points and later it was found out the website only tracks bills that have succeeded. <a href="https://docs.google.com/spreadsheets/d/1Ibw6tfuVjCQ43MsaIR9jW3Jj_wFyQHDvQTnbclc2NXw/edit?usp=sharing">See data here.</a></p>
+    <p>Following this the team decided that the best course of action would be to receive that data directly from the Congress website.</p>
+    <img src="methodimage/Screenshot_1.png" width="640">
+    <p>A web scraper was written to pull the data directly from the <a href="http://clerk.house.gov/evs/2019/index.asp">site</a>. This data contained important information about the bills and their metadata, with the goal of linking the data with the lobbying data that was being compiled. The bill metadata was then compiled into <a href="https://docs.google.com/spreadsheets/d/18QhgxsWv-6slP6X1-9TKa28HwbxL_6tBdltO7Xexmy4/edit?usp=sharing">one document</a>.</p>
+    <img src="methodimage/Screenshot_2.png" width="980"><br><br>
+    <img src="methodimage/Screenshot_3.png" width="473">
+    <p>At the same time an effort was being made to collect the lobbying data from a series of files such as <a href="https://drive.google.com/file/d/11fEa9NgfrwtWJogm513Qx9MGBb7QutgS/view?usp=sharing">this one</a>. These files often contained tens of thousands of entries in an xml format. A python script was written to compile all the data into one large file to create the database. Unfortunately due to size issues, the file is not able to be shared.</p>
+    <button type="button" class="collapsible">Database code</button>
+    <div class="content">
+      <p>CREATE TABLE `metadata` (
+            `Bill` VARCHAR(12) NOT NULL,
+            `Date` VARCHAR(12) NOT NULL,
+            `Dyes` INT(3) NOT NULL,
+            `Dno` INT(3) NOT NULL,
+            `Dpres` INT(3) NOT NULL,
+            `Dnv` INT(3) NOT NULL,
+            `Ryes` INT(3) NOT NULL,
+            `Rno` INT(3) NOT NULL,
+            `Rpres` INT(3) NOT NULL,
+            `Rnv` INT(3) NOT NULL,
+            `Iyes` INT(3) NOT NULL,
+            `Ino` INT(3) NOT NULL,
+            `Ipres` INT(3) NOT NULL,
+            `Inv` INT(3) NOT NULL,
+            `Totalyes` INT(3) NOT NULL,
+            `Totalno` INT(3) NOT NULL,
+            `Totalpres` INT(3) NOT NULL,
+            `Totalnv` INT(3) NOT NULL,
+            `Roll` INT(4) NOT NULL,
+            `Result` TEXT(1) NOT NULL,
+            `Time` TIME NOT NULL,
+            `Quarter` INT(1) NOT NULL,
+            `Year` INT(4) NOT NULL,
+            `Majority` VARCHAR(4) NOT NULL,
+            `Leaning` VARCHAR(4) NOT NULL
+        );
+        </p>
+        <p>
+        CREATE TABLE `lobbyingdata` (
+          `billId` varchar(10) NOT NULL,
+          `amount` int(11) NOT NULL,
+          `issueCode` varchar(45) NOT NULL,
+          `lobbyId` varchar(45) NOT NULL,
+          `lobbyYear` int(11) NOT NULL,
+          `lobbyDate` date NOT NULL,
+          `registrantName` varchar(50) NOT NULL,
+          `clientName` varchar(50) NOT NULL,
+          `lobbyistNames` varchar(300) NOT NULL,
+          `quarterType` varchar(50) NOT NULL,
+          `quarterDates` varchar(50) NOT NULL
+        );</p>
+    </div>
+    <p>Once the databases were created, a decision had to be made about what data to be used. Several models were trained each using differnt amounts of data, along with different data points.</p>
+    <button type="button" class="collapsible">Model 1</button>
+    <div class="content">
+      <p>This model was the first one that was able to produce results in any meaningful capacity. While the model's overall accuracy was somewhat acceptable(68%), it left a lot to be desired given it's false positive rate was around 85%. Additionally the feature importance showed the model created a very low connection between lobbying amount and the issue code. It placed the highest importance on the bill ID (ex: H.R. 1055), which meant that in short this model was not useful.</p>
+        <img src="methodimage/Screenshot_4.png" width="800">
+        <img src="methodimage/Screenshot_5.png" width="800">
+        <img src="methodimage/Screenshot_6.png" height="400">
+    </div>
+    <br><br>
+    <button type="button" class="collapsible">Model 2</button>
+    <div class="content">
+      <p>The next model attempted using only lobbying data, with the hopes that the team would be able to find a higher correlation between lobbying data and a prediction on either pass or fail. The model showed that lobbyist names and registrant names were the two largest factors in passing a bill, which was encouraging for future work. Unfortunately this model had the issues of the previous model, only worse. The false positive rate increased to 95% and the accuracy of the model went down to 57%. At this point the group began considering other options on rating if a bill would pass, and decided on using the total amount of yes votes.</p>
+        <img src="methodimage/Screenshot_7.png" width="800">
+        <img src="methodimage/Screenshot_8.png" width="800">
+        <img src="methodimage/Screenshot_9.png" height="400">
+    </div>
+    <br><br>
+    <button type="button" class="collapsible">Model 3</button>
+    <div class="content">
+      <p>The idea behind using the yes votes allowed the model to create a range for its prediction, along with giving a confidence interval. This would allow the person making a prediction to know how close they would be to a passing or failing vote, along with how confident the model is on the possibility of passing. This idea, while promising, intially did not have high results. A very low r^2 value meant that the model found very little correlation between the lobbying data and the amount of yes's that a bill received. <a href="https://docs.google.com/spreadsheets/d/1KhCr4pOF1qsEPeS7M92GsT3hU7Xh13sEzo8fh9IQpJM/edit?usp=sharing">See batch prediction and results for Model 3</a>.</p>
+        <img src="methodimage/Screenshot_10.png" width="800">
+        <img src="methodimage/Screenshot_11.png" height="400">
+    </div>   
+    <br><br>
+    <button type="button" class="collapsible">Model 4</button>
+    <div class="content">
+      <p>Model 4 followed the same principle except with the hope that more data would allow the model to be more confident in its decision, the amount of data points was increased from 3,000 to 64,000. Additionally far more cpu power was allocated to the model's training. The group began to see a trend in the results of the models that the lobbyist names had the greatest impact in the passing of a bill. However this model, while better, still had a low r^2 value at .17, and the group was unsatisfied with the correlation found.</p>
+        <img src="methodimage/Screenshot_12.png" width="800">
+        <img src="methodimage/Screenshot_13.png" height="400">
+    </div>             
+    <br><br>
+    <button type="button" class="collapsible">Model 5</button>
+    <div class="content">
+      <p>With the fifth and final model, several important changes happened. First and most importantly, two new data columns were added, Majority and Leaning. Majority represented which political party held majority in the House of Representatives at the time, and the bill leaning described which party was affiliated with it. The leaning column was decided as follows. Three categorizations were created: D, R, and B. If half or more of either party voted on a bill, its leaning would  be set to the respective party. If more than half of both parties voted on a bill, then the bill would be bipartisan(B). If no votes had been done yet or the bill was brand new, then the representative that introduced it would represent it's leaning.</p>
+      <p>On top of the two data points that were added, issue Code was reintroduced with the hope that more data points would create a more confident machine. Next, a few thousand more data entires were added, bringing the total data entries up to just under 70,000. Lastly, this model was optimized for Mean Absolute Error. The significance in doing this was that the model would not weigh outliers as heavily, and would instead focus on data that falls in the larger parts of the bell curve. This would mean the bills that received very low votes (less than 100) would have low impact on the model's calculation. While this would make the model less accurate at very low yes votes, the group believed that the individuals that would use this model would use it when they had already gained a non-insignificant amount of yes votes.</p>
+      <p>In the end with a far lower MAE and an acceptable r^2 value (.79), the group felt confident that this model was consistent enough to allow it to make predictions to the general public. </p>
+        <img src="methodimage/Screenshot_14.png" width="800">
+        <img src="methodimage/Screenshot_15.png" width="800">
+        <img src="methodimage/Screenshot_16.png" height="400">
+    </div>  
+    <br><br>
+    </div>
+    
+    
+    
+    
+    <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+    
+</html>
+    
+    
