@@ -25,16 +25,32 @@
                 <div class="col-md-7">
                     <h4><u>Result History</u></h4>
 		    <br>
-		<textarea cols="100" rows="25" readonly>
-            <?php
-			$file=fopen("history.txt","r") or die("Unable to open history!");
-			while(!feof($file))
-			{
-				echo fgets($file);
+			<h5>Displaying 10 most recent entries</h5>
+			<table>
+			<tr>
+			<th>Bill Id</th><th>Amount</th><th>Registrant Name</th><th>Client Name</th><th>Lobbyist Names</th><th>Issue Code</th><th>Leaning</th><th>Majority</th><th>Prediction</th>
+			</tr>
+			<?php
+			$conn = mysqli_connect('localhost', 'username', 'password123', 'PassMyBill');
+			if(!$conn) {
+				die("Connection failed to database");
 			}
-			fclose($file);
-			?>
-</textarea>
+			$sql = "SELECT billId, amount, registrantName, clientname, lobbyistNames, issueCode, leaning, majority, prediction FROM submittedBills ORDER BY id DESC LIMIT 10";
+			$result = mysqli_query($conn, $sql);
+			if(mysqli_num_rows($result) > 0)
+			{
+				while($row = mysqli_fetch_assoc($result)) 
+				{
+					echo "<tr><td>".$row[billId]."</td><td>".$row[amount]."</td><td>".$row[registrantName]."</td><td>".$row[clientname]."</td><td>".$row[lobbyistNames]."</td><td>".$row[issueCode]."</td><td>".$row[leaning]."</td><td>".$row[majority]."</td><td>".$row[prediction]."</td></tr>";
+				}
+			}
+			else
+			{
+				echo("0 results");
+			}
+			$conn->close();
+?>
+			</table>
 		</div>
             </div>
     </body>

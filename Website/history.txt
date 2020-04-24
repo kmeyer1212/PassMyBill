@@ -253,3 +253,89 @@ Start: 197.341278076
 End: 317.296386719
 
 
+H.R. 5643<br>Predicted totalYes: 266.986755371
+Prediction Interval:
+Start: 197.341278076
+End: 317.296386719
+
+
+H.R. 3433<br>Predicted totalYes: 268.147644043
+Prediction Interval:
+Start: 187.393356323
+End: 297.18069458
+Features of top importance:
+(46.02336120605469, u'Leaning')
+(26.17298698425293, u'LobbyistNames')
+(16.476688385009766, u'ClientName')
+(6.574407577514648, u'Majority')
+(5.072227478027344, u'IssueCode')
+(0.1252002716064453, u'Amount')
+(-1.4106616973876953, u'RegistrantName')
+
+
+H.R. 645465<br>Predicted totalYes: 270.472351074
+Prediction Interval:
+Start: 195.174133301
+End: 319.65335083
+
+
+H.R. 645465<br>Predicted totalYes: 270.472351074
+Prediction Interval:
+Start: 195.174133301
+End: 319.65335083
+
+
+H.R. 1997<br>Predicted totalYes: 321.6065979
+Prediction Interval:
+Start: 319.921203613
+End: 473.339904785
+
+
+H.R. 1997<br>Predicted totalYes: 321.6065979
+Prediction Interval:
+Start: 319.921203613
+End: 473.339904785
+
+
+H.R. 1056<br>Predicted totalYes: 235.985046387
+Prediction Interval:
+Start: 213.628356934
+End: 313.760345459
+
+
+H.R. 1056<br>Predicted totalYes: 235.985046387
+Prediction Interval:
+Start: 213.628356934
+End: 313.760345459
+
+
+H.R. 1056<br>Predicted totalYes: 235.985046387
+Prediction Interval:
+Start: 213.628356934
+End: 313.760345459
+
+
+H.R. 7562<br>Predicted totalYes: 193.115661621
+Prediction Interval:
+Start: 133.755645752
+End: 219.425811768
+
+
+H.R. 5367<br>Predicted totalYes: 369.997650146
+Prediction Interval:
+Start: 303.947509766
+End: 475.155639648
+
+
+H.R. 945<br>Predicted totalYes: 192.138748169
+Prediction Interval:
+Start: 140.83605957
+End: 219.046310425
+
+
+H.R. 1079<br>Predicted totalYes: 381.224487305
+Prediction Interval:
+Start: 334.338317871
+End: 465.586242676
+
+

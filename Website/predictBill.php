@@ -40,18 +40,19 @@
                 if ($conn->connect_error) {
                     die("Connection Failed: " . $conn->connect_error);
                 }
-                echo("Connection Successful!");
 
                 $sql = "INSERT INTO submittedBills(billId, amount, registrantName, clientname, lobbyistNames, issueCode, leaning, majority, feature, prediction)
                 VALUES ('$newBill','$amount','$registrantName','$clientName','$lobbyistNames','$issueCode','$leaning','$majority','$featureImportance','$output')";
 
                 if ($conn->query($sql) === TRUE) {
-                    echo "New record created successfully";
+                    echo "<br>New record created successfully";
                 } else {
                     echo "Error: " . $sql . "<br>" . $conn->error;
                 }
                 $conn->close();
-            ?>
+?>
+		<br>
+		<a href="/resultHistoryPage.php">View Past Results</a>
         </div>
     </body>
 </html>
