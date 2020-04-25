@@ -8,7 +8,23 @@
     background-color: cornflowerblue;
     margin-right: auto;
     margin-left: auto;
-    
+}
+
+.leftBox {
+    height: 500px;
+    width: 30%;
+    background-color: #333;
+    margin: 0px auto;
+    float: left;
+    color: white;
+    padding: 10px;
+    margin-right: 20px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.boxContent {
+    text-align: left;
 }
 
 .upcomingBillsCenter{
@@ -37,6 +53,7 @@
     padding: 20px;
     background-color: lightslategray;
     color: black;
+    text-align: center
 }
 
 #options{
@@ -51,11 +68,17 @@
     text-decoration: none;
     border: 3px solid cornflowerblue;
 }
+
 #options li:hover{
     background-color: cornflowerblue;
     cursor: pointer;
     text-decoration: none;
     color: black;
+}
+
+.siteColor {
+    background-color: lightgray;
+    height: 100%;
 }
 
 body, html {

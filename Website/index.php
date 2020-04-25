@@ -19,27 +19,17 @@
         </div>
     </head>
     <body>
-        <div class="container">            
+        <div class="siteColor">   
             <div class="row">
                 <h2 class="col-md-12" id="header">Pass My Bill</h2>
             </div>
             <div class="row">
                 <div id="mainContent" class="col-md-7">
-                    <h4><u>Home</u></h4>
-                    <div>PassMyBill is a web application that uses machine learning to predict the outcome of a legislative bill.
-                    <br>
-                    All machine learning is done through AutoML</div>
-                    <br>
+                    <div class="leftBox">
+                        <h1>Home</h1>
+                        <div>Pass My Bill is a web application that uses machine learning to predict the outcome of a legislative bill! All of this magic is done through the Google service known as "AutoML".</div>
+                    </div>
                     <img src="bill.jpg" style="width: 200px; height: 250px;" alt="bill">
-                    <br>
-                    <br>
-                    <div id="countdown"></div>
-                    <script src="countdownAJAX.js"></script>            
-                    <script>
-                    $.get("appData.php", function(data) {
-                        $("#dynamicList").html(data.list);
-                    }
-                    </script>
                 </div>
             </div>
         </div>

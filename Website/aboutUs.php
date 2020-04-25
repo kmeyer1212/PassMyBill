@@ -19,12 +19,16 @@
 	</div>
     </head>
     <body>
-        <div class="container">
+        <div class="siteColor">
             <div class="row">
                 <h2 class="col-md-12" id="header">Pass My Bill</h2>
             </div>
             <div class="row">
                 <div class="col-md-7">
+                    <div class="leftBox">
+                        <h2>Who Are We?</h2>
+                        <div class="boxContent">We are a group of Computer Science Seniors at the University of Missouri! Our goal is to design a system known as Pass My Bill</div>
+                    </div>
                     <h4><u>About Us</u></h4>
                     <div>We are a group of Computer Science Seniors at Mizzou who are trying to build an amazing Capstone Project: PassMyBill.
                     <br>

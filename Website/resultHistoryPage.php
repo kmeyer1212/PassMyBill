@@ -18,7 +18,7 @@
         </div>
     </head>
     <body>
-        <div class="container">            
+        <div class="siteColor">            
             <div  class="row">
                 <h2 class="col-md-12" id="header">Pass My Bill</h2>
             </div>
