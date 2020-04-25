@@ -25,7 +25,7 @@
             <div class="row">
                 <h2 class="col-md-12" id="header">Pass My Bill</h2>
             </div>
-            <h3 id="billHeader"><u>Bill Prediction</u></h3>
+            <h3 class="centerContent"><u>Bill Prediction</u></h3>
             <div id="billCenter">
                 <div id="billForm">
                     <br>
@@ -54,7 +54,7 @@
 			<p>Client Name: <input class="form-control" name="clientName" type="text" required></p>
 			<p>Lobbyist Names: <input class="form-control" name="lobbyistNames" type="text" required></p>
 			<p>Show Feature Importance? <input class="form-control" name="featureImportance" type="checkbox"></p>
-                        <p><button class="btn btn-primary" type="submit">Submit</button></p>
+                        <p><button class="btn btn-primary" type="submit" style="margin: 10px;">Submit</button></p>
                     </form>
                 <div>Note: Lobbying data associated with bill is cacluated automatically.</div>
                 </div>

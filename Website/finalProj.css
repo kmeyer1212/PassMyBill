@@ -2,12 +2,18 @@
     border: 1px solid black;
     width: 30%;
 }
+
+.centerContent {
+    text-align: center;
+}
+
 #billForm {
     border: 1px solid black;
     width: 30%;
     background-color: cornflowerblue;
     margin-right: auto;
     margin-left: auto;
+    text-align: center;
 }
 
 .leftBox {
@@ -33,11 +39,11 @@
     align-content: center;
     text-align: center;
 }
+
 #billCenter{
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 
 .container{
