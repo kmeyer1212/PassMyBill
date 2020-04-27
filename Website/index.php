@@ -119,7 +119,7 @@
                             
                             <div class="column">
                                 <div class="card">
-                                    <img src="teamImages/max_old.jpg" alt="img" style="width:100%">
+                                    <img src="teamImages/max.jpg" alt="img" style="width:100%">
                                     <div class="container">
                                         <h2>Maxim</h2>
                                         <p class="title">Team Member</p>

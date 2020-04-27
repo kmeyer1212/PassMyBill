@@ -339,3 +339,147 @@ Start: 334.338317871
 End: 465.586242676
 
 
+H.R. 786<br>Predicted totalYes: 266.565002441
+Prediction Interval:
+Start: 137.781936646
+End: 335.221923828
+
+
+H.R. 6210<br>Predicted totalYes: 194.897476196
+Prediction Interval:
+Start: 138.743041992
+End: 225.147491455
+
+
+H.R. 7805<br>Predicted totalYes: 246.717346191
+Prediction Interval:
+Start: 195.777832031
+End: 284.629577637
+
+
+H.R. 6627<br>Predicted totalYes: 204.291625977
+Prediction Interval:
+Start: 155.503570557
+End: 219.016815186
+
+
+H.R. -1<br>Predicted totalYes: 194.976501465
+Prediction Interval:
+Start: 158.105957031
+End: 217.668197632
+
+
+H.R. 1776<br>Predicted totalYes: 383.064208984
+Prediction Interval:
+Start: 314.138427734
+End: 484.202026367
+
+
+H.R. 1776<br>Predicted totalYes: 383.064208984
+Prediction Interval:
+Start: 314.138427734
+End: 484.202026367
+
+
+H.R. 887<br>Predicted totalYes: 263.404571533
+Prediction Interval:
+Start: 202.36050415
+End: 322.724914551
+
+
+H.R. 887<br>Predicted totalYes: 263.404571533
+Prediction Interval:
+Start: 202.36050415
+End: 322.724914551
+
+
+H.R. 56787<br>Predicted totalYes: 270.79486084
+Prediction Interval:
+Start: 195.079620361
+End: 319.970245361
+
+
+H.R. 666<br>Predicted totalYes: 266.986755371
+Prediction Interval:
+Start: 197.341278076
+End: 317.296386719
+
+
+H.R. 666<br>Predicted totalYes: 266.986755371
+Prediction Interval:
+Start: 197.341278076
+End: 317.296386719
+
+
+H.R. 385476678534354678<br>Predicted totalYes: 271.08972168
+Prediction Interval:
+Start: 194.981445312
+End: 320.444091797
+
+
+H.R. 12123<br>Predicted totalYes: 269.405456543
+Prediction Interval:
+Start: 195.6355896
+End: 318.56539917
+
+
+H.R. 12123<br>Predicted totalYes: 269.405456543
+Prediction Interval:
+Start: 195.6355896
+End: 318.56539917
+
+
+H.R. 889<br>Predicted totalYes: 372.415924072
+Prediction Interval:
+Start: 312.767089844
+End: 486.210693359
+
+
+H.R. 889<br>Predicted totalYes: 372.415924072
+Prediction Interval:
+Start: 312.767089844
+End: 486.210693359
+
+
+H.R. 443<br>Predicted totalYes: 272.148132324
+Prediction Interval:
+Start: 185.377807617
+End: 313.914672852
+
+
+H.R. 443<br>Predicted totalYes: 272.148132324
+Prediction Interval:
+Start: 185.377807617
+End: 313.914672852
+
+
+H.R. 5345<br>Predicted totalYes: 276.939483643
+Prediction Interval:
+Start: 188.470489502
+End: 325.264221191
+
+
+H.R. 5345<br>Predicted totalYes: 276.939483643
+Prediction Interval:
+Start: 188.470489502
+End: 325.264221191
+
+
+H.R. 314324123<br>Predicted totalYes: 265.066589355
+Prediction Interval:
+Start: 194.015090942
+End: 309.418518066
+
+
+H.R. 55555<br>Predicted totalYes: 266.803833008
+Prediction Interval:
+Start: 187.988601685
+End: 306.819641113
+
+
+H.R. 7805<br>Predicted totalYes: 246.522827148
+Prediction Interval:
+Start: 196.060119629
+End: 285.387756348
+
+
