@@ -28,7 +28,7 @@
     </style>
     <div class="topnav">
         <a href="index.php">Home</a>
-        <a href="aboutUs.php">About Us</a>
+       
         <a href="billPredictionPage.php">Bill Prediction</a>
         <a href="resultHistoryPage.php">Result History</a>
         <a class="active" href="upcomingBills.php">Upcoming Bills</a>

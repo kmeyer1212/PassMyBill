@@ -17,8 +17,8 @@
 }
 
 .leftBox {
-    height: 500px;
-    width: 30%;
+    height: 350px;
+    width: 200px;
     background-color: #333;
     margin: 0px auto;
     float: left;
@@ -27,6 +27,21 @@
     margin-right: 20px;
     margin-left: 10px;
     text-align: center;
+    border-radius: 10px;
+}
+
+.topBox {
+    height: 140px;
+    width: 700px;
+    background-color: #333;
+    color: white;
+    margin: 15px auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    float: inherit;
+   
+    
 }
 
 .boxContent {
@@ -59,7 +74,11 @@
     padding: 20px;
     background-color: lightslategray;
     color: black;
-    text-align: center
+    text-align: center;
+}
+
+.wordHeader {
+    text-align: center;
 }
 
 #options{
@@ -83,7 +102,7 @@
 }
 
 .siteColor {
-    background-color: lightgray;
+    background-color: #F2F2F2;
     height: 100%;
 }
 
@@ -98,9 +117,13 @@ height: 100%;
   height: auto;
 }
 
-.team{
+.team {
     flex: 33.33%;
   padding: 5px;
+}
+.carolynImg {
+    padding: 5px;
+    float: right;
 }
 
 #tableContainer{
@@ -111,10 +134,12 @@ height: 100%;
 }
 
 .imageRow{
-  display: flex;
+    display: flex;
     align-content: center;
     text-align: center;
 }
+
+
 
 .topnav {
     background-color: #333;
@@ -144,6 +169,8 @@ height: 100%;
     border: 5px solid #c7d8c6;
 }
 
+
+
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
@@ -153,4 +180,43 @@ table, th, td {
 th {
     background-color: #efd9c1;
 }
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 0 8px;
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    margin-left: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+
 

@@ -29,6 +29,7 @@
                         <h2>Who Are We?</h2>
                         <div class="boxContent">We are a group of Computer Science Seniors at the University of Missouri! Our goal is to design a system known as Pass My Bill</div>
                     </div>
+                    <h3>Who Are We?</h3>
                     <h4><u>About Us</u></h4>
                     <div>We are a group of Computer Science Seniors at Mizzou who are trying to build an amazing Capstone Project: PassMyBill.
                     <br>
@@ -38,11 +39,11 @@
                     <h4><u>Meet the Team</u></h4>
                     <br>
                     <div class="imageRow">
-                    <div class="team">Clay<img class="magnify" src="clay.png" alt="img"></div>
-                    <div class="team">Carolyn<img class="magnify" src="caro.png" alt="img"></div>
-                    <div class="team">Elita<img class="magnify" src="elita.png" alt="img"></div>
-                    <div class="team">Kyle<img class="magnify" src="kyle.png" alt="img"></div>
-                    <div class="team">Max<img class="magnify" src="max.jpg" alt="img"></div>
+                    <div class="team">Clay<img class="magnify" src="teamImages/clay.png" alt="img"></div>
+                    <div class="team">Carolyn<img class="magnify" src="teamImages/caro.png" alt="img"></div>
+                    <div class="team">Elita<img class="magnify" src="teamImages/elita.png" alt="img"></div>
+                    <div class="team">Kyle<img class="magnify" src="teamImages/kyle.png" alt="img"></div>
+                    <div class="team">Max<img class="magnify" src="teamImages/max_old.jpg" alt="img"></div>
                     </div>
                     </div>  
                 </div> 

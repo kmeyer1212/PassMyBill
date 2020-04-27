@@ -12,12 +12,12 @@
         </style>
         <div class="topnav">
             <a href="index.php">Home</a>
-            <a href="aboutUs.php">About Us</a>
+           <a href="methodology.html">Methodology</a>
             <a class="active" href="billPredictionPage.php">Bill Prediction</a>
             <a href="resultHistoryPage.php">Result History</a>
             <a href="upcomingBills.php">Upcoming Bills</a>
             <a href="educational.php">Educational Video</a>
-            <a href="methodology.html">Methodology</a>
+            
         </div>
     </head>
     <body>
