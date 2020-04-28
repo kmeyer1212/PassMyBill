@@ -6,10 +6,9 @@
         <title>Methodology</title>
         <link rel="stylesheet" href="finalProj.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
     <style>
-        body{
-            background-color: #CCCBC6;
-        }
+        
         .collapsible {
           background-color: #777;
           color: white;
@@ -27,82 +26,102 @@
         }
 
         .content {
-          padding: 0 18px;
-          display: none;
-          overflow: hidden;
-          background-color: #f1f1f1;
-          width: 850px;
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #F2F2F2;
+            width: 850px;
+            text-align: center;
+            margin: 0px auto;
         }
+        
 </style>
+
     <div class="topnav">
         <a href="index.php">Home</a>
         <a href="methodology.html" class="active" >Methodology</a>
         <a href="billPredictionPage.php">Bill Prediction</a>
         <a href="resultHistoryPage.php">Result History</a>
         <a href="upcomingBills.php">Upcoming Bills</a>
-        <a href="educational.php">Educational Video</a>
+        
         
     </div>
 </head>
 <body>
-
-    <div class="container">
+<div class="siteColor"> 
+    <div class="containerPage">
         <div class="row">
             <h2 class="col-md-12" id="header">Pass My Bill</h2>
         </div>
-    <p>Our project aimed to tackled the problem of finding what, if any, role lobbying played in the passing of a piece of legislature. To narrow down the amount of data that the group would be working with, it was decided that only House Bills (H.R.) would be used. Our initial work led us into a <a href="https://www.govtrack.us/congress/votes#chamber[]=2">website that tracks past legislature</a>. The team quickly found however that the website seemed to contain very few data points and later it was found out the website only tracks bills that have succeeded. <a href="https://docs.google.com/spreadsheets/d/1Ibw6tfuVjCQ43MsaIR9jW3Jj_wFyQHDvQTnbclc2NXw/edit?usp=sharing">See data here.</a></p>
-    <p>Following this the team decided that the best course of action would be to receive that data directly from the Congress website.</p>
-    <img src="methodimage/Screenshot_1.png" width="640">
-    <p>A web scraper was written to pull the data directly from the <a href="http://clerk.house.gov/evs/2019/index.asp">site</a>. This data contained important information about the bills and their metadata, with the goal of linking the data with the lobbying data that was being compiled. The bill metadata was then compiled into <a href="https://docs.google.com/spreadsheets/d/18QhgxsWv-6slP6X1-9TKa28HwbxL_6tBdltO7Xexmy4/edit?usp=sharing">one document</a>.</p>
-    <img src="methodimage/Screenshot_2.png" width="980"><br><br>
-    <img src="methodimage/Screenshot_3.png" width="473">
-    <p>At the same time an effort was being made to collect the lobbying data from a series of files such as <a href="https://drive.google.com/file/d/11fEa9NgfrwtWJogm513Qx9MGBb7QutgS/view?usp=sharing">this one</a>. These files often contained tens of thousands of entries in an xml format. A python script was written to compile all the data into one large file to create the database. Unfortunately due to size issues, the file is not able to be shared.</p>
-    <button type="button" class="collapsible">Database code</button>
-    <div class="content">
-      <p>CREATE TABLE `metadata` (
-            `Bill` VARCHAR(12) NOT NULL,
-            `Date` VARCHAR(12) NOT NULL,
-            `Dyes` INT(3) NOT NULL,
-            `Dno` INT(3) NOT NULL,
-            `Dpres` INT(3) NOT NULL,
-            `Dnv` INT(3) NOT NULL,
-            `Ryes` INT(3) NOT NULL,
-            `Rno` INT(3) NOT NULL,
-            `Rpres` INT(3) NOT NULL,
-            `Rnv` INT(3) NOT NULL,
-            `Iyes` INT(3) NOT NULL,
-            `Ino` INT(3) NOT NULL,
-            `Ipres` INT(3) NOT NULL,
-            `Inv` INT(3) NOT NULL,
-            `Totalyes` INT(3) NOT NULL,
-            `Totalno` INT(3) NOT NULL,
-            `Totalpres` INT(3) NOT NULL,
-            `Totalnv` INT(3) NOT NULL,
-            `Roll` INT(4) NOT NULL,
-            `Result` TEXT(1) NOT NULL,
-            `Time` TIME NOT NULL,
-            `Quarter` INT(1) NOT NULL,
-            `Year` INT(4) NOT NULL,
-            `Majority` VARCHAR(4) NOT NULL,
-            `Leaning` VARCHAR(4) NOT NULL
-        );
-        </p>
-        <p>
-        CREATE TABLE `lobbyingdata` (
-          `billId` varchar(10) NOT NULL,
-          `amount` int(11) NOT NULL,
-          `issueCode` varchar(45) NOT NULL,
-          `lobbyId` varchar(45) NOT NULL,
-          `lobbyYear` int(11) NOT NULL,
-          `lobbyDate` date NOT NULL,
-          `registrantName` varchar(50) NOT NULL,
-          `clientName` varchar(50) NOT NULL,
-          `lobbyistNames` varchar(300) NOT NULL,
-          `quarterType` varchar(50) NOT NULL,
-          `quarterDates` varchar(50) NOT NULL
-        );</p>
-    </div>
-    <p>Once the databases were created, a decision had to be made about what data to be used. Several models were trained each using differnt amounts of data, along with different data points.</p>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="topMethodBox">
+                    <p>Our project aimed to tackled the problem of finding what, if any, role lobbying played in the passing of a piece of legislature. To narrow down the amount of data that the group would be working with, it was decided that only House Bills (H.R.) would be used. Our initial work led us into a <a href="https://www.govtrack.us/congress/votes#chamber[]=2">website that tracks past legislature</a>. The team quickly found however that the website seemed to contain very few data points and later it was found out the website only tracks bills that have succeeded. <a href="https://docs.google.com/spreadsheets/d/1Ibw6tfuVjCQ43MsaIR9jW3Jj_wFyQHDvQTnbclc2NXw/edit?usp=sharing">See data here.</a></p>
+                    <p>Following this the team decided that the best course of action would be to receive that data directly from the Congress website. Below is a screen capture of Congress' website where we collected the data.</p>
+                     <img src="methodimage/Screenshot_1.png" width="640">
+                </div>
+                
+                <div class="centerPics">
+                <p>A web scraper was written to pull the data directly from the <a href="http://clerk.house.gov/evs/2019/index.asp">site</a>. This data contained important information about the bills and their metadata, with the goal of linking the data with the lobbying data that was being compiled. The bill metadata was then compiled into <a href="https://docs.google.com/spreadsheets/d/18QhgxsWv-6slP6X1-9TKa28HwbxL_6tBdltO7Xexmy4/edit?usp=sharing">one document</a>.</p>
+                </div>
+                <div class="centerPics">
+                <img src="methodimage/Screenshot_2.png" width="980"><br><br>
+                <img src="methodimage/Screenshot_3.png" width="473">
+                <p>At the same time an effort was being made to collect the lobbying data from a series of files such as <a href="https://drive.google.com/file/d/11fEa9NgfrwtWJogm513Qx9MGBb7QutgS/view?usp=sharing">this one</a>. These files often contained tens of thousands of entries in an xml format. A python script was written to compile all the data into one large file to create the database. Unfortunately due to size issues, the file is not able to be shared.</p>
+                </div>
+                
+                <button type="button" class="collapsible">Database code</button>
+                <div class="content">
+                <p>CREATE TABLE `metadata` (
+                    `Bill` VARCHAR(12) NOT NULL,
+                    `Date` VARCHAR(12) NOT NULL,
+                    `Dyes` INT(3) NOT NULL,
+                    `Dno` INT(3) NOT NULL,
+                    `Dpres` INT(3) NOT NULL,
+                    `Dnv` INT(3) NOT NULL,
+                    `Ryes` INT(3) NOT NULL,
+                    `Rno` INT(3) NOT NULL,
+                    `Rpres` INT(3) NOT NULL,
+                    `Rnv` INT(3) NOT NULL,
+                    `Iyes` INT(3) NOT NULL,
+                    `Ino` INT(3) NOT NULL,
+                    `Ipres` INT(3) NOT NULL,
+                    `Inv` INT(3) NOT NULL,
+                    `Totalyes` INT(3) NOT NULL,
+                    `Totalno` INT(3) NOT NULL,
+                    `Totalpres` INT(3) NOT NULL,
+                    `Totalnv` INT(3) NOT NULL,
+                    `Roll` INT(4) NOT NULL,
+                    `Result` TEXT(1) NOT NULL,
+                    `Time` TIME NOT NULL,
+                    `Quarter` INT(1) NOT NULL,
+                    `Year` INT(4) NOT NULL,
+                    `Majority` VARCHAR(4) NOT NULL,
+                    `Leaning` VARCHAR(4) NOT NULL
+                    );
+                    </p>
+                <p>
+                    CREATE TABLE `lobbyingdata` (
+                    `billId` varchar(10) NOT NULL,
+                    `amount` int(11) NOT NULL,
+                    `issueCode` varchar(45) NOT NULL,
+                    `lobbyId` varchar(45) NOT NULL,
+                    `lobbyYear` int(11) NOT NULL,
+                    `lobbyDate` date NOT NULL,
+                    `registrantName` varchar(50) NOT NULL,
+                    `clientName` varchar(50) NOT NULL,
+                    `lobbyistNames` varchar(300) NOT NULL,
+                    `quarterType` varchar(50) NOT NULL,
+                    `quarterDates` varchar(50) NOT NULL
+                    );
+                </p>
+                </div>
+                
+                <div class="centerPics">
+                <p>Once the databases were created, a decision had to be made about what data to be used. Several models were trained each using differnt amounts of data, along with different data points.</p>
+                </div>
+  
     <button type="button" class="collapsible">Model 1</button>
     <div class="content">
       <p>This model was the first one that was able to produce results in any meaningful capacity. While the model's overall accuracy was somewhat acceptable(68%), it left a lot to be desired given it's false positive rate was around 85%. Additionally the feature importance showed the model created a very low connection between lobbying amount and the issue code. It placed the highest importance on the bill ID (ex: H.R. 1055), which meant that in short this model was not useful.</p>
@@ -144,11 +163,25 @@
     </div>  
     <br><br>
     </div>
+    </div>
+                
+                
+                
+                
+            </div>
+            
+        </div>
+        
+   
+   
     
     
     
     
     <script>
+       
+        
+        
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -163,6 +196,7 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+        
 </script>
 </body>
     

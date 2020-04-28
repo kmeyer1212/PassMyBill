@@ -13,7 +13,7 @@
             <a href="billPredictionPage.php">Bill Prediction</a>
             <a class="active" href="resultHistoryPage.php">Result History</a>
             <a href="upcomingBills.php">Upcoming Bills</a>
-            <a href="educational.php">Educational Video</a>
+            
             
         </div>
     </head>
@@ -22,11 +22,11 @@
             <div  class="row">
                 <h2 class="col-md-12" id="header">Pass My Bill</h2>
             </div>
-                <div class="col-md-7">
-                    <h4><u>Result History</u></h4>
+                <div class="col-md-12">
+                    <h4 class="centerContent"><u>Result History</u></h4>
 		    <br>
 			<h5>Displaying 10 most recent entries</h5>
-			<table>
+			<table class="centerContent">
 			<tr>
 			<th>Bill Id</th><th>Amount</th><th>Registrant Name</th><th>Client Name</th><th>Lobbyist Names</th><th>Issue Code</th><th>Leaning</th><th>Majority</th><th>Prediction</th>
 			</tr>

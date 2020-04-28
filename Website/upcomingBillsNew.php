@@ -32,7 +32,7 @@
         <a href="billPredictionPage.php">Bill Prediction</a>
         <a href="resultHistoryPage.php">Result History</a>
         <a class="active" href="upcomingBills.php">Upcoming Bills</a>
-        <a href="educational.php">Educational Video</a>
+        
         <a href="mySubmittedBills.php">My Bills</a>
     </div>
 </head>

@@ -1,3 +1,4 @@
+
 #loginForm {
     border: 1px solid black;
     width: 30%;
@@ -6,16 +7,30 @@
 .centerContent {
     text-align: center;
 }
-
+#centerWords {
+    text-align: center;
+    margin: 0px auto;
+}
 #billForm {
+    border-radius: 20px;
     border: 1px solid black;
     width: 30%;
     background-color: cornflowerblue;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+    padding-bottom: 10px;
+    max-width: 375px;
+    min-width: 300px;;
+    
 }
 
+.centerPics {
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+    padding: 0px;
+}
 .leftBox {
     height: 350px;
     width: 200px;
@@ -39,9 +54,28 @@
     padding: 10px;
     text-align: center;
     border-radius: 10px;
-    float: inherit;
-   
-    
+    float: inherit;  
+}
+
+.topMethodBox {
+    height: 230x;
+    width: 700px;
+    background-color: #333;
+    color: white;
+    margin: 15px auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    float: inherit;  
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.exampleImg {
+    float: right;
+    width: 416px;
+    height: 1109px;
 }
 
 .boxContent {
@@ -58,16 +92,18 @@
 #billCenter{
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
+    float: center;
 }
 
-.container{
+.containerPage{
     text-align: center;
-    background-color: #CCCBC6;
+    background-color: #F2F2F2
     color: black;
     height: 100%;
     margin: 0px auto;
-    box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.75);
+    
+    
 }
 
 #header {
@@ -217,6 +253,9 @@ th {
 .title {
   color: grey;
 }
+
+
+
 
 
 

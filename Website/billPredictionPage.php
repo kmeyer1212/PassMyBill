@@ -16,7 +16,7 @@
             <a class="active" href="billPredictionPage.php">Bill Prediction</a>
             <a href="resultHistoryPage.php">Result History</a>
             <a href="upcomingBills.php">Upcoming Bills</a>
-            <a href="educational.php">Educational Video</a>
+            
             
         </div>
     </head>
@@ -26,6 +26,7 @@
                 <h2 class="col-md-12" id="header">Pass My Bill</h2>
             </div>
             <h3 class="centerContent"><u>Bill Prediction</u></h3>
+            
             <div id="billCenter">
                 <div id="billForm">
                     <br>
