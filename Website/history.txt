@@ -483,3 +483,9 @@ Start: 196.060119629
 End: 285.387756348
 
 
+H.R. 99<br>Predicted totalYes: 263.262084961
+Prediction Interval:
+Start: 183.042327881
+End: 320.514953613
+
+

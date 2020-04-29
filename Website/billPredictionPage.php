@@ -8,7 +8,12 @@
         <style>
             form{
                 background-color: #c7d8c6;
-            }
+	    }
+	    body, html
+	    {
+		height: 110%;
+		background-color: #F2F2F2;
+	    }
 	</style>
         <div class="topnav">
             <a href="index.php">Home</a>

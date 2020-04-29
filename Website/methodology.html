@@ -123,8 +123,11 @@
                 </div>
                 
                 <div class="centerPics">
-                <p>Once the databases were created, a decision had to be made about what data to be used. Several models were trained each using differnt amounts of data, along with different data points.</p>
-                </div>
+		<br>
+                <p>Once the databases were created, a decision had to be made about what data to be used. Several models were trained each using different amounts of data, along with different data points. As the data could be interpreted in different ways, care had to be taken that the team did not make the biased in the eyes of the model.</p>
+		
+		<br>
+		</div>
   
     <button type="button" class="collapsible">Model 1</button>
     <div class="content">
@@ -151,7 +154,7 @@
     <br><br>
     <button type="button" class="collapsible">Model 4</button>
     <div class="content">
-      <p>Model 4 followed the same principle except with the hope that more data would allow the model to be more confident in its decision, the amount of data points was increased from 3,000 to 64,000. Additionally far more cpu power was allocated to the model's training. The group began to see a trend in the results of the models that the lobbyist names had the greatest impact in the passing of a bill. However this model, while better, still had a low r^2 value at .17, and the group was unsatisfied with the correlation found.</p>
+      <p>Model 4 followed the same principle except with the hope that more data would allow the model to be more confident in its decision, the amount of data points was increased from 30,000 to 640,000. Additionally far more cpu power was allocated to the model's training. The group began to see a trend in the results of the models that the lobbyist names had the greatest impact in the passing of a bill. However this model, while better, still had a low r^2 value at .17, and the group was unsatisfied with the correlation found.</p>
         <img src="methodimage/Screenshot_12.png" width="800">
         <img src="methodimage/Screenshot_13.png" height="400">
     </div>             
@@ -159,7 +162,7 @@
     <button type="button" class="collapsible">Model 5</button>
     <div class="content">
       <p>With the fifth and final model, several important changes happened. First and most importantly, two new data columns were added, Majority and Leaning. Majority represented which political party held majority in the House of Representatives at the time, and the bill leaning described which party was affiliated with it. The leaning column was decided as follows. Three categorizations were created: D, R, and B. If half or more of either party voted on a bill, its leaning would  be set to the respective party. If more than half of both parties voted on a bill, then the bill would be bipartisan(B). If no votes had been done yet or the bill was brand new, then the representative that introduced it would represent it's leaning.</p>
-      <p>On top of the two data points that were added, issue Code was reintroduced with the hope that more data points would create a more confident machine. Next, a few thousand more data entires were added, bringing the total data entries up to just under 70,000. Lastly, this model was optimized for Mean Absolute Error. The significance in doing this was that the model would not weigh outliers as heavily, and would instead focus on data that falls in the larger parts of the bell curve. This would mean the bills that received very low votes (less than 100) would have low impact on the model's calculation. While this would make the model less accurate at very low yes votes, the group believed that the individuals that would use this model would use it when they had already gained a non-insignificant amount of yes votes.</p>
+      <p>On top of the two data points that were added, issue Code was reintroduced with the hope that more data points would create a more confident machine. Next, a few thousand more data entires were added, bringing the total data entries up to just under 700,000. Lastly, this model was optimized for Mean Absolute Error. The significance in doing this was that the model would not weigh outliers as heavily, and would instead focus on data that falls in the larger parts of the bell curve. This would mean the bills that received very low votes (less than 100) would have low impact on the model's calculation. While this would make the model less accurate at very low yes votes, the group believed that the individuals that would use this model would use it when they had already gained a non-insignificant amount of yes votes.</p>
       <p>In the end with a far lower MAE and an acceptable r^2 value (.79), the group felt confident that this model was consistent enough to allow it to make predictions to the general public. </p>
         <img src="methodimage/Screenshot_14.png" width="800">
         <img src="methodimage/Screenshot_15.png" width="800">
