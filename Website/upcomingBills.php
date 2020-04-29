@@ -16,9 +16,10 @@
             }
             table{
                 border: 1px solid #efd9c1;
-            }
-            body{
-                background-color: #CCCBC6;
+	    }
+            html, body{
+		background-color: #F2F2F2;
+		height: 100%;
             }
             #tableContainer{
                 background-color: #c7d8c6;

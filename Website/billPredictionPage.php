@@ -9,15 +9,13 @@
             form{
                 background-color: #c7d8c6;
             }
-        </style>
+	</style>
         <div class="topnav">
             <a href="index.php">Home</a>
            <a href="methodology.html">Methodology</a>
             <a class="active" href="billPredictionPage.php">Bill Prediction</a>
             <a href="resultHistoryPage.php">Result History</a>
             <a href="upcomingBills.php">Upcoming Bills</a>
-            
-            
         </div>
     </head>
     <body>
@@ -59,7 +57,7 @@
                     </form>
                 <div>Note: Lobbying data associated with bill is cacluated automatically.</div>
                 </div>
-            </div>
+		</div>
         </div>
     </body>
 </html>
