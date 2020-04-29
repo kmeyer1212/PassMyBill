@@ -56,7 +56,7 @@
                                     <div class="container">
                                         <h2>Clayton</h2>
                                         <p class="title">Team Member</p>
-                                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                                        <p>I will be graduating this May and moving out to Baltimore for work. I spend most of my time watching St. Louis Blues hockey and working on my long list of small Arduino/RaspberryPi projects.</p>
                                         <p>cscyrd@mail.missouri.edu</p>
         
                                     </div>
@@ -70,6 +70,8 @@
                                         <h2>Carolyn</h2>
                                         <p class="title">Team Member</p>
                                         <p>After graduating this Spring, I am pursuing a Master's of Computer Science at Northwestern University.</p>
+                                        <br>
+                                        <br>
                                         <p>cmpvm5@mail.missouri.edu</p>
         
                                     </div>
@@ -82,7 +84,8 @@
                                     <div class="container">
                                         <h2>Elita</h2>
                                         <p class="title">Team Member</p>
-                                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                                        <p>After graduation and once travel is less dangerous, I will head to Northern California to explore Human Computer Interaction either in industry or academia.</p>
+                                        <br>
                                         <p>ezn526@mail.missouri.edu</p>
         
                                     </div>
@@ -91,11 +94,11 @@
                             
                             <div class="column">
                                 <div class="card">
-                                    <img src="teamImages/kyleNew.jpeg" alt="img" style="width:100%">
+                                    <img src="teamImages/kyleNewNew.jpeg" alt="img" style="width:100%">
                                     <div class="container">
                                         <h2>Kyle</h2>
                                         <p class="title">Team Member</p>
-                                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                                        <p>After graduating, I will be moving to Kansas City to begin working full time with Cerner Corporation in an effort to continue the advancement and development of better healthcare technologies nationwide.</p>
                                         <p>kbmxr6@mail.missouri.edu</p>
         
                                     </div>
@@ -108,7 +111,8 @@
                                     <div class="container">
                                         <h2>Maxim</h2>
                                         <p class="title">Team Member</p>
-                                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                                        <p>After graduating, I plan on pursuing a career in software development, however, i have not deceded what company I will be working for.</p>
+                                        <br>
                                         <p>mlb5b@mail.missouri.edu</p>
                                     </div>
                                 </div>
